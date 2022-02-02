@@ -1,0 +1,19 @@
+@import './styles/global'
+@import './styles/typography'
+@import './styles/variables'
+    
+nav
+    padding: 30px
+    display: grid
+    grid-template-columns: 1fr 100px 1fr
+    align-items: center
+    background-color: $navbar
+    ul
+        grid-column: 1/2
+        list-style-type: none 
+    #logo
+        grid-column: 2/3
+    #socials
+        grid-column: 3/4
+        text-align: right
+        

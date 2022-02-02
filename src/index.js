@@ -1,19 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Layout from './pages/Layout';
+import App from './App';
 import Home from './pages/Home';
-import Blog from './pages/Blog';
-import Contact from './pages/Contact';
+import Project from './pages/Project';
+import CV from './pages/CV';
 import NoPage from './pages/NoPage';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-export default function App() {
+
+export default function Routing() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path="/" element={<App />}>
           <Route index element={<Home />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/projets" element={<Project />} />
+          <Route path="/curriculum-vitae" element={<CV />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
@@ -21,4 +22,4 @@ export default function App() {
   )
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<Routing />, document.getElementById('root'));

@@ -1,6 +1,9 @@
 function Home() {
     return (
-        <h1>Welcome to my Lucapp!</h1>
+        <>
+            <h1>Bienvenue sur mon portfolio !</h1>
+            <p>*Nom, *Prénom, *Promotions, *Plan du site</p>
+        </>
     )
 }
 
