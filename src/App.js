@@ -1,24 +1,49 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, NavLink, Link } from "react-router-dom";
 import './App.sass'
-
-const RouterLink = {
-    textDecoration: 'none',
-    color: 'white',    
-}
 
 function App() {
     return (
         <>
             <nav>
-                <ul>
-                    <li> <Link to="/" style={RouterLink}>Accueil</Link> </li>
-                    <li> <Link to="/projets" style={RouterLink}>Projets</Link> </li>
-                    <li> <Link to="/curriculum-vitae" style={RouterLink}>CV</Link> </li>
+                <ul id="nav-links">
+                    <li> 
+                        <NavLink 
+                        className={({ isActive }) => (isActive ? 'active' : 'inactive')} 
+                        to="/"
+                        exact="true">
+                        Accueil
+                        </NavLink> 
+                    </li>
+                    <li> 
+                        <NavLink 
+                        className={({ isActive }) => (isActive ? 'active' : 'inactive')} 
+                        to="/projets">
+                        Projets
+                        </NavLink> 
+                    </li>
+                    <li> 
+                        <NavLink 
+                        className={({ isActive }) => (isActive ? 'active' : 'inactive')} 
+                        to="/curriculum-vitae" >
+                        CV
+                        </NavLink> 
+                    </li>
                 </ul>
 
-                <div id="logo">Logo à venir</div>
+                <div id="logo-frame">
+                    <Link className="logo" to="/">
+                        Luc•App
+                    </Link>
+                </div>
                 
-                <div id="socials">RS à venir</div>
+                <ul id="socials">
+                    <li>
+                        <a id="linkedin" href="https://www.linkedin.com/in/lucas-schrever/"><i class="fas fa-arrow-right"></i > Linkedin</a>
+                    </li>
+                    <li>
+                        <a id="instagram" href="https://www.instagram.com/lucasschrever/"><i class="fas fa-arrow-right"></i> Instagram</a>
+                    </li>
+                </ul>
             </nav>
 
             <div id="Container">
