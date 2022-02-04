@@ -2,21 +2,21 @@
 @import './styles/typography'
 @import './styles/variables'
     
-nav
+nav     // App.sass pour le style de la nav
     padding: 30px
     display: grid
     grid-template-columns: repeat(3, 1fr)
     align-items: center
     background-color: $navbar
-    #nav-links
+    #nav-links  // Menu de gauche
         grid-column: 1/2
         font-size: 20px
-        .active
+        .active     // Style du link actif
             color: $color-one
             transition: 0.25s
             &::after
                 content: ' •'
-        .inactive
+        .inactive   // Le reste, quoi
             color: $font-color
             transition: 0.25s
             &:hover
@@ -38,7 +38,8 @@ nav
         a
             transition: 0.25s
             i
-                font-size: 14px
+                vertical-align: baseline
+                font-size: 15px
         #linkedin:hover
             color: #004182
         #instagram:hover

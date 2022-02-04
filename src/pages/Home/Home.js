@@ -17,7 +17,7 @@ function Home() {
 
                 <h2> Actualités </h2>
 
-                    <div class="img-frame">
+                    <div id="iim">
                         <img src={iim} alt="Logo école du digital IIM" />
                         <br/>
                         <small>Logo IIM version orange</small>

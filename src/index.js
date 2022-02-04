@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import Home from './pages/Home/Home';
-import Project from './pages/Project';
-import CV from './pages/CV';
-import NoPage from './pages/NoPage';
+import Project from './pages/Project/Project';
+import CV from './pages/CV/CV';
+import NoPage from './pages/NoPage/NoPage';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 export default function Routing() {
