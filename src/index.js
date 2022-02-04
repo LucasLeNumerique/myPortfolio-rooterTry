@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import Home from './pages/Home/Home';
-import Project from './pages/Project/Project';
+import Projects from './pages/Projects/Projects';
 import CV from './pages/CV/CV';
 import NoPage from './pages/NoPage/NoPage';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -13,7 +13,7 @@ export default function Routing() {
       <Routes>
         <Route path="/" element={<App />}>
           <Route index element={<Home />} />
-          <Route path="/projets" element={<Project />} />
+          <Route path="/projets" element={<Projects />} />
           <Route path="/curriculum-vitae" element={<CV />} />
           <Route path="*" element={<NoPage />} />
         </Route>

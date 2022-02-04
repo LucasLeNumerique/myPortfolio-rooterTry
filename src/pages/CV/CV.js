@@ -4,8 +4,8 @@ import profile from '../../images/profil.jpg'
 function CV() {
     return (
         <>
-            <h1> Mon C<span class="cv-title-span">
-                urriculum</span> V<span class="cv-title-span">itae</span>
+            <h1> Mon C<span className="cv-title-span">
+                urriculum</span> V<span className="cv-title-span">itae</span>
             </h1>
            
             <div id="profile-photo">

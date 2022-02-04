@@ -39,10 +39,10 @@ function App() {
                 
                 <ul id="socials">
                     <li>
-                        <a id="linkedin" href="https://www.linkedin.com/in/lucas-schrever/"><i class="fas fa-arrow-right"></i > Linkedin</a>
+                        <a id="linkedin" href="https://www.linkedin.com/in/lucas-schrever/"><i className="fas fa-arrow-right"></i > Linkedin</a>
                     </li>
                     <li>
-                        <a id="instagram" href="https://www.instagram.com/lucasschrever/"><i class="fas fa-arrow-right"></i> Instagram</a>
+                        <a id="instagram" href="https://www.instagram.com/lucasschrever/"><i className="fas fa-arrow-right"></i> Instagram</a>
                     </li>
                 </ul>
             </nav>
