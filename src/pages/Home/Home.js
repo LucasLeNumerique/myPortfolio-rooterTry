@@ -1,23 +1,25 @@
-import iim from '../images/iim.png'
+import './Home.sass'
+import iim from '../../images/iim.png'
 
 function Home() {
     return (
         <>
-            <h1> Bienvenue sur mon portfolio ! </h1>
+            <h1> Bienvenue sur <br/> mon portfolio ! </h1>
 
                 <h2> Mon nom est Lucas Schrever </h2>
 
                     <p> Le territoire du numérique est bien étendu pour moi ! C'est pour cela que je ne cesse d'explorer ses possibilités.
-                        Le développement web, le marketing digital, le design graphique et le montage vidéo sont des zones d'intérêt principales.
+                        Le développement web, le marketing digital, le design graphique et le montage vidéo sont mes zones d'intérêt principales.
                     <br/>
                         Mon objectif d'avenir est de guider une équipe sur un projet digital ;
-                        Je souhaite la rapprocher avec son client pour mener à bien le travail collectif.
+                        je souhaite la rapprocher avec son client pour mener à bien le travail collectif.
                     </p>
 
                 <h2> Actualités </h2>
 
                     <div class="img-frame">
                         <img src={iim} alt="Logo école du digital IIM" />
+                        <br/>
                         <small>Logo IIM version orange</small>
                     </div>
 

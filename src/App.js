@@ -1,5 +1,6 @@
 import { Outlet, NavLink, Link } from "react-router-dom";
 import './App.sass'
+import Footer from './components/footer/footer'
 
 function App() {
     return (
@@ -32,7 +33,7 @@ function App() {
 
                 <div id="logo-frame">
                     <Link className="logo" to="/">
-                        Luc•App
+                        Luc•as
                     </Link>
                 </div>
                 
@@ -49,6 +50,7 @@ function App() {
             <div id="Container">
                 <Outlet />
             </div>
+            <Footer />
         </>
     )
 }
