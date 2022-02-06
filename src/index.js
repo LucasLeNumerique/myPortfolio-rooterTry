@@ -11,11 +11,11 @@ export default function Routing() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<App />}>
-          <Route index element={<Home />} />
-          <Route path='/projets' element={<Projects />} />
-          <Route path='/curriculum-vitae' element={<CV />} />
-          <Route path='*' element={<NoPage />} />
+        <Route path='/' element={<App />}>    
+          <Route index element={<Home />} />    {/* Composant-page d'accueil */}
+          <Route path='/projets' element={<Projects />} />    {/* Composant-page de liste des projets */}
+          <Route path='/curriculum-vitae' element={<CV />} />    {/* Composant-page du CV */}
+          <Route path='*' element={<NoPage />} />    {/* Composant-page d'erreur 404 */}
         </Route>
       </Routes>
     </BrowserRouter>

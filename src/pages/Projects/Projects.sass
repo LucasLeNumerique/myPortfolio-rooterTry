@@ -1,8 +1,8 @@
-// APPLIQUER LES BONNES DIMENSIONS DES CARTES DE PROJET EN FONCTION DE LA LARGEUR DE LA VIEWPORT
-    
 #projects-grid
     margin: 30px 0
     display: grid
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+    // Responsive en 2 temps : des cartes produits plus grandes pour une taille de viewport très grande
+    // & retirer une colonne de cartes lorsque chaque carte est en dessous d'une largeur subjective
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))     
     grid-template-rows: auto
     gap: 50px            

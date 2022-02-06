@@ -1,7 +1,7 @@
 import './CV.sass'
 import profile from '../../images/profil.jpg'
 
-function CV() {
+function CV() {     // Page CV manuellement éditée, sans composant répété
     return (
         <>
             <h1> Mon C<span className="cv-title-span">

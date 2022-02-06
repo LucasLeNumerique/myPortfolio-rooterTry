@@ -1,7 +1,7 @@
 import './Home.sass'
 import iim from '../../images/iim.png'
 
-function Home() {
+function Home() {   // Page d'accueil manuellement éditée, sans composant répété
     return (
         <>
             <h1> Bienvenue sur <br/> mon portfolio ! </h1>

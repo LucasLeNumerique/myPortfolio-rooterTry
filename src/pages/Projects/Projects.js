@@ -6,7 +6,7 @@ function Project() {
         <>
             <h1>Mes projets</h1>
             
-            <div id="projects-grid">
+            <div id="projects-grid">    {/* Liste qui récupère le composant template répété de la carte de projet */}
                 <ProjectCard />
                 <ProjectCard />
                 <ProjectCard />

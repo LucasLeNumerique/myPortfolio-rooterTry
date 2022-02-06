@@ -4,26 +4,28 @@ import { NavLink, Link } from "react-router-dom"
 function Header() {
     return (
         <nav>
-            <ul id="nav-links">
+            <ul id="nav-links">     {/* Menu qui utilise le système de Routing de ReactJS */}
                 <li> 
                     <NavLink 
-                    className={({ isActive }) => (isActive ? 'active' : 'inactive')} 
-                    to='/'
-                    exact="true">
+                    className={({ isActive }) => (isActive ? 'active' : 'inactive')}    // Condition booléenne pour styliser le l'élément titre
+                    to='/'  // Redirection URL avec le Router React
+                    exact="true">   {/* Paramètre qui implique la page d'erreur 404 */} 
                     Accueil
                     </NavLink> 
                 </li>
                 <li> 
                     <NavLink 
                     className={({ isActive }) => (isActive ? 'active' : 'inactive')} 
-                    to='/projets'>
+                    to='/projets'
+                    exact="true">
                     Projets
                     </NavLink> 
                 </li>
                 <li> 
                     <NavLink 
                     className={({ isActive }) => (isActive ? 'active' : 'inactive')} 
-                    to='/curriculum-vitae'>
+                    to='/curriculum-vitae'
+                    exact="true">
                     CV
                     </NavLink> 
                 </li>

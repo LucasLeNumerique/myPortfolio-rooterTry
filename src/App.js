@@ -5,13 +5,13 @@ import Footer from './components/footer/footer'
 function App() {
     return (
         <>
-        <Header />
+        <Header />      {/* Récupération du composant du menu */}
 
         <div id="Container">
-            <Outlet />
+            <Outlet />      {/* Injection de page (ou composant) en fonction de la requête de l'URL : cf index.js */}
         </div>
 
-        <Footer />
+        <Footer />      {/* Récupération du composant de la section de fin */}
         </>
     )
 }
