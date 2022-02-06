@@ -15,7 +15,7 @@ Excepté les fichiers dans le dossier **Style**.
 #### Sass
 #### React Router
 
-## Structure de la page
+## Structure du portfolio
 
 ### Page d'accueil
 #### Auto-présentation
