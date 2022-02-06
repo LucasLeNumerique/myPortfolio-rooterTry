@@ -1,56 +1,17 @@
-import { Outlet, NavLink, Link } from "react-router-dom";
-import './App.sass'
+import { Outlet } from "react-router-dom";
+import Header from "./components/header/header";
 import Footer from './components/footer/footer'
 
 function App() {
     return (
         <>
-            <nav>
-                <ul id="nav-links">
-                    <li> 
-                        <NavLink 
-                        className={({ isActive }) => (isActive ? 'active' : 'inactive')} 
-                        to="/"
-                        exact="true">
-                        Accueil
-                        </NavLink> 
-                    </li>
-                    <li> 
-                        <NavLink 
-                        className={({ isActive }) => (isActive ? 'active' : 'inactive')} 
-                        to="/projets">
-                        Projets
-                        </NavLink> 
-                    </li>
-                    <li> 
-                        <NavLink 
-                        className={({ isActive }) => (isActive ? 'active' : 'inactive')} 
-                        to="/curriculum-vitae" >
-                        CV
-                        </NavLink> 
-                    </li>
-                </ul>
+        <Header />
 
-                <div id="logo-frame">
-                    <Link className="logo" to="/">
-                        Luc•as
-                    </Link>
-                </div>
-                
-                <ul id="socials">
-                    <li>
-                        <a id="linkedin" href="https://www.linkedin.com/in/lucas-schrever/"><i className="fas fa-arrow-right"></i > Linkedin</a>
-                    </li>
-                    <li>
-                        <a id="instagram" href="https://www.instagram.com/lucasschrever/"><i className="fas fa-arrow-right"></i> Instagram</a>
-                    </li>
-                </ul>
-            </nav>
+        <div id="Container">
+            <Outlet />
+        </div>
 
-            <div id="Container">
-                <Outlet />
-            </div>
-            <Footer />
+        <Footer />
         </>
     )
 }
