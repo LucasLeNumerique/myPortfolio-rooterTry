@@ -8,7 +8,7 @@ function Header() {
                 <li> 
                     <NavLink 
                     className={({ isActive }) => (isActive ? 'active' : 'inactive')} 
-                    to="/"
+                    to='/'
                     exact="true">
                     Accueil
                     </NavLink> 
@@ -16,21 +16,21 @@ function Header() {
                 <li> 
                     <NavLink 
                     className={({ isActive }) => (isActive ? 'active' : 'inactive')} 
-                    to="/projets">
+                    to='/projets'>
                     Projets
                     </NavLink> 
                 </li>
                 <li> 
                     <NavLink 
                     className={({ isActive }) => (isActive ? 'active' : 'inactive')} 
-                    to="/curriculum-vitae" >
+                    to='/curriculum-vitae'>
                     CV
                     </NavLink> 
                 </li>
             </ul>
 
             <div id="logo-frame">
-                <Link className="logo" to="/">
+                <Link className="logo" to='/'>
                     Luc•as
                 </Link>
             </div>
