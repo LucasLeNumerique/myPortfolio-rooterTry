@@ -4,7 +4,7 @@ import iim from '../../images/iim.png'
 function Home() {   // Page d'accueil manuellement éditée, sans composant répété
     return (
         <>
-            <h1> Bienvenue sur <br/> mon portfolio ! </h1>
+            <h1> Bienvenue sur mon portfolio ! </h1>
 
                 <h2> Mon nom est Lucas Schrever </h2>
 

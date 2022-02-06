@@ -5,6 +5,8 @@
 
 #profile-photo
     display: flex
+    flex-wrap: wrap
+    flex-direction: row
     justify-content: space-around
     align-items: center
     img
@@ -39,4 +41,14 @@ section
         text-align: center
         p
             font-size: 1.5em
-   
+
+@media screen and (max-width: 425px)
+    #profile-photo
+        img
+            width: 300px
+            height: auto
+        #infos
+            #infos-a
+                font-size: 4rem
+            #infos-b
+                font-size: 1rem
